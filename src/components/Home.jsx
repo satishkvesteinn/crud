@@ -128,7 +128,7 @@ const Home = () => {
                                                         {
                                                             student.map((data, index) => {
                                                                 return (
-                                                                    <tr>
+                                                                    <tr key={data.id}>
                                                                         <th scope="row">{index + 1}</th>
                                                                         <td>{data.stuname}</td>
                                                                         <td>{data.stulastname}</td>
